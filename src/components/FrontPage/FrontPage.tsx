@@ -22,7 +22,6 @@ export function FrontPage() {
     <section className="frontpage bg-light py-5" id="home">
       <Container>
         <Row className="align-items-center">
-          {/* Linkerkant: Tekst */}
           <Col md={6} className="text-start mb-5 mb-md-0">
             <h1 className="display-3 fw-bold text-dark">
               Hallo daar, <br />
@@ -43,8 +42,6 @@ export function FrontPage() {
             <button className="btn btn-info text-dark fw-bold px-4 py-2 mt-4">
               Bekijk meer
             </button>
-
-            {/* Sociale iconen */}
             <div className="d-flex gap-3 mt-4">
               <a
                 href="https://github.com/anas911s"
@@ -76,11 +73,10 @@ export function FrontPage() {
             </div>
           </Col>
 
-          {/* Rechterkant: Afbeelding */}
           <Col md={6} className="text-center">
             <div className="profile-circle mx-auto">
               <img
-                src="/images/anas.png"
+                src="/images/svg.png"
                 alt="Profielfoto van Anas"
                 className="img-fluid"
               />
@@ -118,7 +114,8 @@ export function FrontPage() {
           box-shadow: 0 0 25px rgba(0,0,0,0.15);
         }
         .profile-circle img {
-          width: 120%;
+          width: 100%;
+          height: 100%;
           object-fit: cover;
         }
       `}</style>
