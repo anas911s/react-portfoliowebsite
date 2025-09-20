@@ -9,13 +9,13 @@ export function Footer() {
         <p className="mb-2 mb-md-0">&copy; {new Date().getFullYear()} Anas Amhaou</p>
 
         <div className="d-flex gap-3">
-          <a href="https://github.com" target="_blank" rel="noopener noreferrer" className="social-icon-footer">
+          <a href="https://github.com/anas911s" target="_blank" rel="noopener noreferrer" className="social-icon-footer">
             <FaGithub />
           </a>
-          <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer" className="social-icon-footer">
+          <a href="https://www.linkedin.com/in/anas-amhaou-7806032a7/" target="_blank" rel="noopener noreferrer" className="social-icon-footer">
             <FaLinkedin />
           </a>
-          <a href="https://instagram.com" target="_blank" rel="noopener noreferrer" className="social-icon-footer">
+          <a href="https://www.instagram.com/anas.gwn/" target="_blank" rel="noopener noreferrer" className="social-icon-footer">
             <FaInstagram />
           </a>
         </div>

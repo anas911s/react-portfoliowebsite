@@ -1,9 +1,19 @@
-import React from "react";
+import React, {useEffect} from "react";
 import { FrontPage } from "../components/FrontPage/FrontPage.tsx";
 import { Navigation } from "../components/navigation/navbar.tsx";
 import { Footer } from "../components/footer/footer.tsx";
 
 export function Index() {
+
+  useEffect(() => {
+    document.title = "Anas Amhaou";
+    
+    const link = document.querySelector("link[rel~='icon']") as HTMLLinkElement | null;;
+    if (link) {
+      link.href = "/favicon.ico";
+    }
+  }, []);
+
   return (
     
     <div
@@ -19,16 +29,11 @@ export function Index() {
       className="d-flex flex-column min-vh-100"
       style={{ fontFamily: "Poppins, sans-serif" }}
     >
-      {/* Header */}
-      <Navigation />
+    <Navigation />
 
-      {/* Main content (pakt alle resterende hoogte) */}
-<main className="flex-grow-1 pt-5">
-  <FrontPage />
-</main>
-
-
-      {/* Footer plakt altijd onderaan */}
+    <main className="flex-grow-1 pt-5">
+      <FrontPage />
+    </main>
       <Footer />
     </div>
 

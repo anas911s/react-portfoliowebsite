@@ -22,48 +22,66 @@ export function FrontPage() {
     <section className="frontpage bg-light py-5" id="home">
       <Container>
         <Row className="align-items-center">
-          {/* Left Side: Text */}
+          {/* Linkerkant: Tekst */}
           <Col md={6} className="text-start mb-5 mb-md-0">
             <h1 className="display-3 fw-bold text-dark">
-              Hi There, <br />
-              I'm{" "}
+              Hallo daar, <br />
+              Ik ben{" "}
               <span className="fw-semibold text-dark">Anas</span>{" "}
               <span className="fw-bold text-primary">Amhaou</span>
             </h1>
 
             <h2 className="h3 fw-bold mt-3 text-dark">
-              I am into{" "}
+              Ik hou van{" "}
               <span ref={typedElement} className="text-info"></span>
             </h2>
 
             <p className="mt-4 text-secondary">
-              Junior Developer die open staat voor ontwikkeling.
+              Junior ontwikkelaar die openstaat voor groei en nieuwe uitdagingen.
             </p>
 
             <button className="btn btn-info text-dark fw-bold px-4 py-2 mt-4">
               Bekijk meer
             </button>
 
-            {/* Social Icons */}
+            {/* Sociale iconen */}
             <div className="d-flex gap-3 mt-4">
-              <a href="https://github.com" target="_blank" rel="noopener noreferrer" className="social-icon">
+              <a
+                href="https://github.com/anas911s"
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="GitHub profiel van Anas"
+                className="social-icon"
+              >
                 <FaGithub />
               </a>
-              <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer" className="social-icon">
+              <a
+                href="https://www.linkedin.com/in/anas-amhaou-7806032a7/"
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="LinkedIn profiel van Anas"
+                className="social-icon"
+              >
                 <FaLinkedin />
               </a>
-              <a href="https://instagram.com" target="_blank" rel="noopener noreferrer" className="social-icon">
+              <a
+                href="https://www.instagram.com/anas.gwn/"
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="Instagram profiel van Anas"
+                className="social-icon"
+              >
                 <FaInstagram />
               </a>
             </div>
           </Col>
 
-          {/* Right Side: Image */}
+          {/* Rechterkant: Afbeelding */}
           <Col md={6} className="text-center">
             <div className="profile-circle mx-auto">
               <img
                 src="/images/anas.png"
-                alt="anas"
+                alt="Profielfoto van Anas"
                 className="img-fluid"
               />
             </div>
