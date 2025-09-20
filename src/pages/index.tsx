@@ -1,6 +1,7 @@
 import React from "react";
 import { FrontPage } from "../components/FrontPage/FrontPage.tsx";
 import { Navigation } from "../components/navigation/navbar.tsx";
+import { Footer } from "../components/footer/footer.tsx";
 
 export function Index() {
   return (
@@ -17,6 +18,8 @@ export function Index() {
     <Navigation />
 
     <FrontPage />
+    <Footer />
+
     </div>
   );
 }
