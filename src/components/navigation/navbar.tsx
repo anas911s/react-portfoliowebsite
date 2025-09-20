@@ -1,35 +1,26 @@
-import React from 'react';
-import Container from 'react-bootstrap/Container';
-import Nav from 'react-bootstrap/Nav';
-import Navbar from 'react-bootstrap/Navbar';
-import NavDropdown from 'react-bootstrap/NavDropdown';
-import 'bootstrap/dist/css/bootstrap.min.css';
-
+import React from "react";
+import Container from "react-bootstrap/Container";
+import Nav from "react-bootstrap/Nav";
+import Navbar from "react-bootstrap/Navbar";
+import "bootstrap/dist/css/bootstrap.min.css";
 
 export function Navigation() {
-return(
-    <Navbar expand="lg" className="bg-body-tertiary">
-       <Container>
-        <Navbar.Brand href="#home">Anas Amhaou</Navbar.Brand>
-        <Navbar.Toggle aria-controls="basic-navbar-nav" />
-        <Navbar.Collapse id="basic-navbar-nav">
-          <Nav className="me-auto">
-            <Nav.Link href="#home">Home</Nav.Link>
-            <Nav.Link href="#link">Link</Nav.Link>
-            <NavDropdown title="Dropdown" id="basic-nav-dropdown">
-              <NavDropdown.Item href="#action/3.1">Action</NavDropdown.Item>
-              <NavDropdown.Item href="#action/3.2">
-                Another action
-              </NavDropdown.Item>
-              <NavDropdown.Item href="#action/3.3">Something</NavDropdown.Item>
-              <NavDropdown.Divider />
-              <NavDropdown.Item href="#action/3.4">
-                Separated link
-              </NavDropdown.Item>
-            </NavDropdown>
+  return (
+    <Navbar expand="lg" bg="light" className="shadow-sm py-3 fixed-top">
+      <Container>
+        <Navbar.Brand href="#home" className="fw-bold text-primary fs-4">
+          Anas Amhaou
+        </Navbar.Brand>
+        <Navbar.Toggle aria-controls="main-navbar" />
+        <Navbar.Collapse id="main-navbar">
+          <Nav className="ms-auto fw-semibold">
+            <Nav.Link href="#home" className="mx-2">Home</Nav.Link>
+            <Nav.Link href="#about" className="mx-2">About</Nav.Link>
+            <Nav.Link href="#projects" className="mx-2">Projects</Nav.Link>
+            <Nav.Link href="#contact" className="mx-2">Contact</Nav.Link>
           </Nav>
         </Navbar.Collapse>
-      </Container> 
+      </Container>
     </Navbar>
-);
+  );
 }

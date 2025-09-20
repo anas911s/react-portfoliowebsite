@@ -15,10 +15,22 @@ export function Index() {
         fontFamily: 'Poppins, sans-serif',
       }}
     >
-    <Navigation />
+    <div
+      className="d-flex flex-column min-vh-100"
+      style={{ fontFamily: "Poppins, sans-serif" }}
+    >
+      {/* Header */}
+      <Navigation />
 
-    <FrontPage />
-    <Footer />
+      {/* Main content (pakt alle resterende hoogte) */}
+<main className="flex-grow-1 pt-5">
+  <FrontPage />
+</main>
+
+
+      {/* Footer plakt altijd onderaan */}
+      <Footer />
+    </div>
 
     </div>
   );
